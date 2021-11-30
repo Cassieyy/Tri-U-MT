@@ -44,7 +44,6 @@ def get_loaders(args, data_folder: str,
     if depth(list_folders_list) == 1:  # For compatibility reasons, avoid changing all the previous configuration files
         list_folders_list = [list_folders_list]
 
-    print()
     train_loaders = []
     for i, (train_topfolder, folders_list) in \
             enumerate(zip(args.training_folders, list_folders_list)):
